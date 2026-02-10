@@ -12,7 +12,6 @@ This documentation will focus on batch scanning. [For more info on stream scanni
 
 *NOTE: To follow this documentation you will need to have SimpleSifter already started and running, which requires a fujitsu-compatible scanner and a Raspberry Pi.  [You can find our detailed setup documentation here.](https://scribehow.com/viewer/How_to_Install_and_use_the_Simple_Sifter__Ih_iNfYkTySnw453BZ4mdQ)*
 
-
 ## Step 1 - Prepare to Scan
 
 ### Manual Preparation
@@ -47,11 +46,30 @@ In this documentation, we will scan normal-finish only cards from *Magic: The Ga
 
 ![alt text](image-3.png)
 
-## Step 2 - Scan Cards
+## Step 2 - Scanning Cards
 
+#### Start Scanning
+Click "Start" to begin scanning cards.  The scanner will consume the cards one at a time until:
 
+1. The user manually stops/pauses scanning
+2. The scanner cannot find a new card to scan (either a jam or out of cards)
+3. The scan count, if set, is reached
+4. A stop condition, if configured, is triggered
 
 #### Checking the Scan Progress
 
-As cards are being scanned, you can track the progress of the scanned cards by clicking on 
+As cards are being scanned, you can track the progress of the scanned cards by clicking on the most recent card image on the scanner settings.  This will open the scan history for the scanner, where you can see the AI detection progress of your scanned cards as well as information such as name, set, market prices, and more:
 
+![alt text](image-4.png)
+
+## Step 3 - Adding to a Batch
+
+SimpleSifter allows for an in-progress batch to be either:
+1. Saved to a new batch
+2. Added to an existing batch
+*NOTE: These batches are saved to the SimpleSifter (your Raspberry Pi) and NOT to SortSwift. We will cover moving these to SortSwift or exporting via CSV or XML in the next step*
+
+#### Saving to a New Batch
+
+
+## Step 4 - Importing the Batch into SortSwift
